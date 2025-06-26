@@ -102,7 +102,7 @@ andreev-estate/
 ├── /img/                      # Изображения
 ├── /css/                      # Стили
 ├── /sql/andreev_estate.sql    # Дамп базы данных
-└── README.md                  # Этот файл
+└── readme.md                  # Этот файл
 ```
 
 ---
