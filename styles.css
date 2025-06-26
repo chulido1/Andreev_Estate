@@ -1,0 +1,1145 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  background-color: #fef9f5;
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 170px;
+  z-index: 1000;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.logo {
+  flex: 0 0 auto;
+}
+
+.logo img {
+  height: 130px;
+}
+
+.nav-menu {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 50px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #111;
+  font-size: 28px;
+  transition: color 0.3s;
+  white-space: nowrap;
+}
+
+.nav-menu a:hover {
+  color: #666;
+}
+
+
+/* Блок с фоновым изображением */
+.hero {
+  background-image: url('../Andreev_Estate/img/mainfon.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 90px;
+  position: relative;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.hero-text {
+  text-align: left;
+  color: #fff;
+  margin-left: 100px;
+}
+
+.hero-text h1,
+.hero-text h2.subline {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  /* Bold */
+  font-size: 64px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.hero-text h2.subline {
+  text-indent: 295px;
+}
+
+
+.exclusive {
+  padding: 100px 60px;
+  background-color: #fff;
+}
+
+.exclusive-header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 90px;
+}
+
+.exclusive-header p {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 48px;
+  color: #111;
+}
+
+.view-all-btn {
+  font-family: 'EB Garamond', serif;
+  font-size: 20px;
+  color: #111;
+  text-decoration: none;
+  padding: 5px 35px;
+  background: rgba(234, 219, 199, 0.7);
+  border: 1px solid #111;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+
+.view-all-btn:hover {
+  background-color: #111;
+  color: #fff;
+}
+
+.exclusive-cards {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card img {
+  width: 440px;
+  height: auto;
+  border-radius: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+  object-fit: cover;
+}
+
+
+
+
+
+
+.custom-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 200px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.block-office {
+  position: relative;
+  width: 994px;
+  height: 511px;
+  border-radius: 40px;
+  background-color: #04304B;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+}
+
+.block-office .overlay-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  opacity: 0.16;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.block-office .text-group {
+  position: relative;
+  z-index: 2;
+  color: white;
+  padding: 40px;
+}
+
+.block-office h3 {
+  font-size: 64px;
+  line-height: 1.2;
+  font-weight: normal;
+}
+
+.block-office .btn {
+  margin-top: 72px;
+}
+
+.block-about {
+  position: relative;
+  width: 384px;
+  height: 511px;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+}
+
+.block-about .bg-darken {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.37);
+  border-radius: 40px;
+  z-index: 1;
+}
+
+.block-about .overlay-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.37;
+}
+
+.block-about .text-group {
+  position: relative;
+  z-index: 2;
+  color: white;
+  padding: 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.block-about h3 {
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: normal;
+}
+
+.block-about .button-wrapper {
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 93px;
+}
+
+.block-cabinet {
+  position: relative;
+  width: 535px;
+  height: 535px;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+}
+
+.block-cabinet .overlay-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  object-fit: cover;
+  z-index: 1;
+
+}
+
+.block-cabinet .text-group {
+  position: relative;
+  z-index: 2;
+  color: white;
+  padding: 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.block-cabinet h3 {
+  font-size: 52px;
+  line-height: 1.2;
+  font-weight: normal;
+}
+
+.block-cabinet .indent {
+  padding-left: 100px;
+}
+
+.block-cabinet .button-wrapper {
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 58px;
+}
+
+.feedback-form {
+  width: 867px;
+  min-height: 535px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 40px;
+  font-family: 'EB Garamond', serif;
+  padding: 40px 0 0 58px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-form h3 {
+  font-size: 48px;
+  font-weight: normal;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 560px;
+  background: #DDDDDD;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 28px;
+  margin-bottom: 26px;
+  font-family: 'EB Garamond', serif;
+}
+
+.feedback-form textarea {
+  height: 120px;
+  resize: none;
+}
+
+.feedback-form button {
+  width: 236px;
+  height: 58px;
+  background: #49560E;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 28px;
+  font-family: 'Playfair Display', serif;
+  cursor: pointer;
+  margin-bottom: 26px;
+}
+
+.btn.white-outline {
+  width: 235px;
+  height: 52px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid white;
+  font-size: 24px;
+  font-family: 'EB Garamond', serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+
+
+.site-footer {
+  background-color: #000;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  padding: 40px 60px;
+  padding-top: 80px;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.footer-container {
+  max-width: 1920px;
+  height: 198px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  position: relative;
+}
+
+.footer-logo-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 60px;
+}
+
+.footer-logo-block img {
+  height: 150px;
+}
+
+.footer-logo-block p {
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  flex: 1;
+}
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 26px;
+  transition: color 0.3s;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+.footer-nav a:hover {
+  color: #ffffff;
+}
+
+.footer-copy {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+
+.footer-rounded-transition {
+  height: 100px;
+  background: white;
+  /* или red для теста */
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  margin-bottom: -50px;
+  /* <-- налегание на подвал */
+  z-index: 2;
+  position: relative;
+}
+
+
+
+
+
+/* Блок "Контакты" */
+.contacts {
+  display: flex;
+  justify-content: center;
+  padding: 260px 0 80px;
+  background-color: #fff;
+}
+
+.contacts-bg {
+  position: relative;
+  width: 100%;
+  max-width: 1500px;
+  height: 350px;
+  background-image: url('../Andreev_Estate/img/contactsfon.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts-bg h2 {
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 64px;
+}
+
+
+
+
+.contact-info-map {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  max-width: 1550px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.contacts-card {
+  width: 700px;
+  border: 1px solid #000000;
+  border-radius: 40px;
+  padding: 30px;
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  line-height: 2;
+}
+
+.contacts-card p {
+  margin-bottom: 20px;
+}
+
+.map-container iframe {
+  width: 660px;
+  height: 500px;
+  border-radius: 12px;
+  border: none;
+}
+
+
+
+/* О нас */
+
+.about {
+  display: flex;
+  justify-content: center;
+  padding: 260px 0 80px;
+  background-color: #fff;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-bg {
+  position: relative;
+  width: 100%;
+  max-width: 1500px;
+  height: 400px;
+  background-image: url('../Andreev_Estate/img/aboutfon.png');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+}
+
+.about-bg h2 {
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 64px;
+}
+
+
+.about-content {
+  max-width: 1550px;
+  margin: 60px;
+  padding: 0 30px;
+  font-family: 'Playfair Display', serif;
+  color: #111;
+}
+
+.about-content h1 {
+  font-size: 64px;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+}
+
+.about-content h2 {
+  font-size: 32px;
+  margin-top: 40px;
+  margin-bottom: 16px;
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+}
+
+.about-content p {
+  font-size: 28px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+}
+
+.about-content ul {
+  margin-left: 20px;
+  font-size: 28px;
+  line-height: 1.6;
+  list-style-type: disc;
+  margin-bottom: 30px;
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+}
+
+.about-content li {
+  margin-bottom: 10px;
+}
+
+/* Обратная связь */
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  padding-top: 250px;
+  min-height: calc(100vh - 170px);
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.contact-intro-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  color: #000000;
+  text-align: left;
+  max-width: 1300px;
+  margin-bottom: 80px;
+  line-height: 1.5;
+  align-self: flex-start;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* Карточка обратной связи */
+.contact-card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  align-self: center;
+  width: 862px;
+  height: 535px;
+  padding: 40px 0 0 58px;
+  border: 1px solid black;
+  border-radius: 40px;
+}
+
+.contact-card h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  color: #000000;
+  margin-bottom: 40px;
+  text-align: left;
+  margin-bottom: 26px;
+  font-weight: normal;
+}
+
+/* Форма */
+.contact-form-new {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.contact-input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-input-group label {
+  display: none;
+}
+
+.contact-form-input {
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 10px;
+  font-family: 'EB Garamond', serif;
+  font-size: 28px;
+  color: #333;
+  box-sizing: border-box;
+  transition: background-color 0.3s;
+  width: 560px;
+  padding: 12px;
+}
+
+.contact-form-input::placeholder {
+  color: #666;
+}
+
+.contact-form-input:focus {
+  outline: none;
+  background-color: #d0d0d0;
+}
+
+.contact-message-input {
+  resize: none;
+  height: 120px;
+}
+
+/* Кнопка отправки */
+.contact-submit-button {
+  background-color: #49560E;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background-color 0.3s;
+  width: 236px;
+  height: 58px;
+}
+
+.contact-submit-button:hover {
+  background-color: #5a6423;
+}
+
+
+.feedback-flash-message {
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.feedback-flash-message.success {
+    background-color: #e6ffed;
+    color: #2b7a2b;
+    border: 1px solid #b4e2b4;
+}
+
+.feedback-flash-message.error {
+    background-color: #ffe6e6;
+    color: #a94442;
+    border: 1px solid #f5c2c2;
+}
+
+
+
+
+
+/* Регистрация */
+
+
+.main-content {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-center {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.logo-center img {
+  width: 160px;
+  height: auto;
+}
+
+.formreg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.registration-box {
+  border: 1px solid #000000;
+  border-radius: 40px;
+  padding: 60px 100px;
+  text-align: center;
+  width: 800px;
+  box-sizing: border-box;
+}
+
+.registration-box input::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+}
+
+.registration-box h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+.registration-box input {
+  width: 350px;
+  padding: 8px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ddd;
+  font-size: 28px;
+  font-family: 'EB Garamond', serif;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+
+.registration-box button {
+  background-color: #49560E;
+  color: white;
+  padding: 10px 25px;
+  font-size: 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: 'EB Garamond', serif;
+}
+
+.success-message {
+  color: green;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.error-message {
+  color: red;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+
+/* Объекты */
+
+.catalog-title {
+  text-align: center;
+  font-size: 64px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  margin: 120px 0 100px;
+}
+
+.catalog-filter-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 100px;
+}
+
+.catalog-filter-row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.catalog-filter-row select,
+.catalog-filter-row input[type=number] {
+  padding: 8px 12px;
+  font-size: 22px;
+  border-radius: 40px;
+  border: 1px solid #000000;
+  width: 185px;
+  font-family: 'EB Garamond', serif;
+}
+
+.catalog-filter-row button {
+  background-color: #49560E;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 40px;
+  cursor: pointer;
+  font-family: 'EB Garamond', serif;
+  font-size: 22px;
+  width: 160px;
+}
+
+/* Центрирование карточек объектов */
+.catalog-house-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 60px;
+  padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+
+.house-card {
+  width: 300px;
+  border-radius: 40px;
+  background: #f6f6f6;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s;
+  height: 340px;
+}
+
+.house-card:hover {
+  transform: translateY(-5px);
+}
+
+.house-card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.house-card p {
+  margin: 10px 0 10px 10px;
+  font-size: 22px;
+  font-family: 'EB Garamond', serif;
+}
+
+/* Кнопка "Ещё" */
+#load-more {
+  display: block;
+  margin: 30px auto;
+  background-color: #002945;
+  color: white;
+  padding: 10px 50px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  font-size: 28px;
+  font-family: 'EB Garamond', serif;
+
+}
+
+.catalog-filter-bottom input[type=number] {
+  width: 300px;
+}
+
+
+
+.house-card-info {
+  padding: 10px 15px;
+}
+
+.price-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.like-button {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #999;
+  transition: color 0.2s;
+  padding: 0;
+}
+
+.like-button .heart-icon {
+  font-family: Arial, sans-serif;
+}
+
+.like-button.favorited .heart-icon {
+  color: rgb(0, 0, 0);
+  content: "🖤";
+}
+
+
+/* Личный кабинет */
+
+
+.account-container {
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+    font-family: 'Playfair Display', serif;
+}
+
+.account-sidebar {
+    width: 500px;
+}
+
+.account-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.account-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.account-subitem {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.logout-link {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 400;
+    color: #000;
+    text-decoration: none;
+}
+
+.favorites-section {
+    flex-grow: 1;
+}
+
+.favorites-list {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.favorite-form {
+    margin-top: 10px;
+}
+
+.favorite-btn.filled {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.favorite-btn.filled:hover {
+    opacity: 0.7;
+}
+
+
+/* Инфомация об объекте */
+
+.house-wrapper {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.house-box {
+    background: #ffffff;
+    border-radius: 40px;
+    padding: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.house-box h1 {
+    font-size: 32px;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.house-image {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 40px;
+    margin: 25px 0;
+    object-fit: cover;
+}
+
+.house-info {
+    font-size: 22px;
+    color: #333;
+    margin: 8px 0;
+    max-width: 700px;
+    width: 100%;
+    text-align: left;
+    line-height: 1.5;
+    font-family: 'EB Garamond', serif;
+
+}
+
+.house-info strong {
+    display: inline-block;
+    min-width: 100px;
+    color: #000;
+}
+
+
+
+.apply-form {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.apply-button {
+    background-color: #04304B;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.apply-button:hover {
+    background-color: #053d5f;
+}
+
+.login-reminder {
+    margin-top: 30px;
+    text-align: center;
+    color: #cc0000;
+    font-weight: bold;
+}
+
+/* уведомленние о заявке */
+
+.flash-message {
+    padding: 15px 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    animation: fadeOut 1s ease-in-out 2s forwards;
+    position: relative;
+    z-index: 999;
+}
+
+.flash-message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.flash-message.warning {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+}
+
+.flash-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+
+
+
+
+
